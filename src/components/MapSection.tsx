@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import {
   MapPin,
@@ -21,18 +22,18 @@ function WaIcon({ className = "w-4 h-4" }: { className?: string }) {
   );
 }
 
-/* ─── Bearing logo mark ─────────────────────────────────────── */
+/* ─── Brand logo mark ──────────────────────────────────────── */
 function BearingMark() {
   return (
-    <svg viewBox="0 0 36 36" fill="none" className="w-7 h-7 flex-shrink-0">
-      <circle cx="18" cy="18" r="17" stroke="#e07532" strokeWidth="1.8" />
-      <circle cx="18" cy="18" r="10" stroke="#e07532" strokeWidth="1.4" />
-      <circle cx="18" cy="18" r="4"  fill="#e07532" />
-      <circle cx="18" cy="5"  r="2"  fill="#e07532" />
-      <circle cx="18" cy="31" r="2"  fill="#e07532" />
-      <circle cx="5"  cy="18" r="2"  fill="#e07532" />
-      <circle cx="31" cy="18" r="2"  fill="#e07532" />
-    </svg>
+    <div className="relative w-8 h-8 flex-shrink-0 rounded-md bg-white ring-1 ring-white/15 shadow-md shadow-black/30 overflow-hidden">
+      <Image
+        src="/sidh-logo-blue.png"
+        alt="SIDH SALES logo"
+        fill
+        sizes="32px"
+        className="object-contain scale-[1.15]"
+      />
+    </div>
   );
 }
 

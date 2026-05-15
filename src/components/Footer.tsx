@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 const QUICK_LINKS = [
@@ -44,20 +45,18 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-5">
-              <div className="w-9 h-9 flex-shrink-0">
-                <svg viewBox="0 0 36 36" fill="none" className="w-full h-full">
-                  <circle cx="18" cy="18" r="17" stroke="#e07532" strokeWidth="2" />
-                  <circle cx="18" cy="18" r="10" stroke="#e07532" strokeWidth="1.5" />
-                  <circle cx="18" cy="18" r="4" fill="#e07532" />
-                  <circle cx="18" cy="5"  r="2.2" fill="#e07532" />
-                  <circle cx="18" cy="31" r="2.2" fill="#e07532" />
-                  <circle cx="5"  cy="18" r="2.2" fill="#e07532" />
-                  <circle cx="31" cy="18" r="2.2" fill="#e07532" />
-                </svg>
+              <div className="relative w-10 h-10 flex-shrink-0 rounded-lg bg-white ring-1 ring-white/15 shadow-md shadow-black/30 overflow-hidden">
+                <Image
+                  src="/sidh-logo-blue.png"
+                  alt="SIDH SALES logo"
+                  fill
+                  sizes="40px"
+                  className="object-contain scale-[1.15]"
+                />
               </div>
               <div>
                 <div className="text-white font-extrabold text-[17px] leading-tight">SIDH SALES</div>
-                <div className="text-[#8a9ab0] text-[9px] uppercase tracking-[0.15em] leading-none">Industrial Supply · Since 2008</div>
+                <div className="text-[#8a9ab0] text-[9px] uppercase tracking-[0.15em] leading-none mt-0.5">Industrial Supply · Since 2008</div>
               </div>
             </div>
 
