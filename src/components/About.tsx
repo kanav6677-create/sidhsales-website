@@ -127,7 +127,7 @@ export default function About() {
                         "
                       >
                         <Image
-                          src="/sidh-logo-new.png"
+                          src="/sidh-logo-blue.png"
                           alt="SIDH SALES"
                           fill
                           sizes="(max-width: 640px) 140px, (max-width: 1024px) 160px, 180px"

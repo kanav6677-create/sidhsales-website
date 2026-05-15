@@ -129,7 +129,7 @@ export default function Navbar() {
                 "
               >
                 <Image
-                  src="/sidh-logo-new.png"
+                  src="/sidh-logo-blue.png"
                   alt="SIDH SALES logo"
                   fill
                   sizes="48px"
